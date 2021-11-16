@@ -1,6 +1,6 @@
 # audio-shorts
 
-The project can be downloaded and the following commands needs to be run in root directory:
+The project can be downloaded and the following commands needs to be run in root directory (audio-short):
   1. go run github.com/99designs/gqlgen generate
   2. go run server.go
  
