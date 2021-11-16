@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS shorts (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(50),
+    description VARCHAR(50),
+    category VARCHAR(50),
+    fileUrl VARCHAR(50),
+    creator JSONB
+);

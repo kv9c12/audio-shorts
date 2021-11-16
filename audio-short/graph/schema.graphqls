@@ -1,0 +1,33 @@
+scalar Upload
+
+type Creator {
+  name: String!
+  email: String!
+}
+
+type Short {
+  id: Int!
+  title: String!
+  description: String!
+  category: String!
+  fileUrl: String!
+  creator: Creator!
+}
+
+input NewShort {
+  title: String!
+  description: String!
+  category: String!
+  file: Upload!
+  name: String!
+  email: String!
+}
+
+type Query {
+  GetShortsByPage(page: Int!): [Short!]!
+  GetShortById(id: Int!): Short!
+}
+
+type Mutation {
+  UploadShort(input: NewShort!): String!
+}
